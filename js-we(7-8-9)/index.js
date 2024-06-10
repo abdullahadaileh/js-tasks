@@ -4,15 +4,15 @@
 const button = document.getElementById('btn');
 button.addEventListener('click', function() 
     {
-        alert('ok');
+        alert('صباح النور هلا ');
     }
 );
 
 // task 2
 
-document.getElementById("btn2").addEventListener("click", function() 
+document.getElementById("btn1").addEventListener("click", function() 
     {
-        document.getElementById("pp1").textContent = "welcom to js";
+        document.getElementById("hrt").textContent = "welcom to js";
     }
 );
 
@@ -20,7 +20,7 @@ document.getElementById("btn2").addEventListener("click", function()
 
 document.getElementById("div1").addEventListener("dblclick", function() 
     {
-        this.style.backgroundColor = "lightgreen";
+        this.style.backgroundColor = "aqua";
     }
 );
 
@@ -45,7 +45,7 @@ const nameInput = document.getElementById("name");
 form.addEventListener("submit", function(event)
     {
         event.preventDefault();  
-        alert("sent");
+        console.log("sent");
     }
 );
 
@@ -56,5 +56,3 @@ nameInput.addEventListener("blur", function()
         this.style.borderColor = "black"; 
     }
 );
-
-
