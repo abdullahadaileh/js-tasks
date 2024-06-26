@@ -16,14 +16,17 @@ let container = document.getElementById('posts');
 //             template+=
 //             `
 //             <div class="post">
-//             <h3>${posts.title}</h3>
-//             <h3>${posts.body}</h3>
+//             <h3>Title: ${posts.title}</h3>
+//             <h3>Body: ${posts.body}</h3>
 //             </div>
 //             `
 //         });
 //         container.innerHTML = template;
 //     })
 // }
+
+
+
 
 
 
@@ -38,8 +41,8 @@ let container = document.getElementById('posts');
 //             template+=
 //             `
 //             <div class="post">
-//             <p>${posts.body}</p>
-//             <h4>${posts.email}</h4>
+//             <h4>Name:${posts.name}</h4>
+//             <h4>Email:${posts.email}</h4>
 //             </div>
 //             `
 //         });
@@ -47,9 +50,13 @@ let container = document.getElementById('posts');
 //     })
 // }
 
+
+
+
+
+
+
 // task3
-
-
 
 // function fetchData(){
 //     fetch('https://jsonplaceholder.typicode.com/albums?userId=1')
@@ -60,14 +67,16 @@ let container = document.getElementById('posts');
 //             template+=
 //             `
 //             <div class="post">
-//             <h3>${posts.title}</h3>
-//             <h3>${posts.body}</h3>
+//             <h3>Title:${posts.title}</h3>
 //             </div>
 //             `
 //         });
 //         container.innerHTML = template;
 //     })
 // }
+
+
+
 
 
 
@@ -82,7 +91,7 @@ let container = document.getElementById('posts');
 //             template+=
 //             `
 //             <div class="post">         
-//             <h3>${posts.body}</h3>
+//             <h3>Title:${posts.title}</h3>
 //              <img src="${posts.thumbnailUrl}" alt="">
 //              <img src="${posts.thumbnailUrl}" alt="">
 //              <img src="${posts.thumbnailUrl}" alt="">
@@ -92,6 +101,11 @@ let container = document.getElementById('posts');
 //         container.innerHTML = template;
 //     })
 // }
+
+
+
+
+
 
 
 // task5 Not completed
@@ -116,28 +130,33 @@ let container = document.getElementById('posts');
 // }
 
 
+
+
+
+
+
 // task6
 
-function fetchData(){
-    fetch('https://jsonplaceholder.typicode.com/users')
-    .then(Response => Response.json() )
-    .then(data=>{
-        let template = '';
-        data.forEach(posts =>{
-            template+=
-            `
-            <div class="post">         
-            <h3>Name:    ${posts.name}</h3>
-            <h3>username:${posts.username}</h3>
-            <h3>email:   ${posts.email}</h3>
-            <h3>address: ${posts.address}</h3>
+// function fetchData(){
+//     fetch('https://jsonplaceholder.typicode.com/users')
+//     .then(Response => Response.json() )
+//     .then(data=>{
+//         let template = '';
+//         data.forEach(posts =>{
+//             template+=
+//             `
+//             <div class="post">         
+//             <h3>Name:    ${posts.name}</h3>
+//             <h3>username:${posts.username}</h3>
+//             <h3>email:   ${posts.email}</h3>
+//             <h3>address: ${posts.address}</h3>
 
-            </div>
-            `
-        });
-        container.innerHTML = template;
-    })
-}
+//             </div>
+//             `
+//         });
+//         container.innerHTML = template;
+//     })
+// }
 
 
 
